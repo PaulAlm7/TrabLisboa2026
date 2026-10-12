@@ -1,0 +1,343 @@
+
+/* =====================================
+   CORES DO SITE
+===================================== */
+
+:root {
+    --azul: #365B91;
+    --azul-claro: #EEF3FA;
+    --lilas: #B8A9DD;
+    --lilas-claro: #F7F4FC;
+    --branco: #FFFFFF;
+    --texto: #465266;
+    --borda: #DCE4F0;
+}
+
+
+/* =====================================
+   ESTILO GERAL
+===================================== */
+
+body {
+    background-color: var(--branco);
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    color: var(--azul);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+a {
+    color: var(--azul);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #28466F;
+    text-decoration: underline;
+}
+
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar {
+    background-color: var(--branco);
+    border-bottom: 1px solid var(--borda);
+    padding: 15px 0;
+}
+
+/* LOGÓTIPO */
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* LINKS */
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--texto);
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--azul) !important;
+}
+
+/* MENU DROPDOWN */
+
+.dropdown-menu {
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+}
+
+.dropdown-item {
+    color: var(--texto);
+    padding: 10px 15px;
+}
+
+.dropdown-item:hover {
+    background-color: var(--azul-claro);
+    color: var(--azul);
+}
+
+/* ÁREA DIREITA */
+
+.right-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 20px;
+}
+
+/* PESQUISA */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid var(--borda);
+    border-radius: 25px;
+    background-color: var(--branco);
+}
+
+.search-box i {
+    color: var(--azul);
+}
+
+.search-box input {
+    width: 105px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--texto);
+    font-size: 0.85rem;
+}
+
+.search-box input:focus {
+    width: 125px;
+}
+
+/* BOTÃO CURSOS */
+
+.btn-cursos {
+    display: inline-block;
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 9px 18px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.btn-cursos:hover {
+    background-color: #28466F;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+
+/* =====================================
+   APRESENTAÇÃO
+===================================== */
+
+header {
+    background-color: var(--azul-claro);
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 50px 30px;
+}
+
+header .lead {
+    color: var(--azul);
+    font-weight: 400;
+}
+
+header p {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* IMAGEM PRINCIPAL */
+
+.imagem-principal {
+    width: 100%;
+    max-width: 900px;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid var(--borda);
+}
+
+
+/* =====================================
+   SECÇÕES
+===================================== */
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+}
+
+
+/* =====================================
+   CARTÕES DAS EMPRESAS
+===================================== */
+
+.card {
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(54, 91, 145, 0.04);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(54, 91, 145, 0.10);
+}
+
+.card-body {
+    padding: 28px;
+}
+
+.card-title {
+    color: var(--azul);
+    margin-bottom: 15px;
+}
+
+.card-text {
+    color: var(--texto);
+    font-size: 0.95rem;
+}
+
+
+/* =====================================
+   TESTEMUNHOS
+===================================== */
+
+.testemunhos {
+    background-color: var(--lilas-claro);
+    border: 1px solid #EBE5F4;
+    border-radius: 15px;
+    padding: 40px 30px !important;
+}
+
+.testemunhos .card {
+    background-color: var(--branco);
+    border: 1px solid #E5DDF1;
+}
+
+.testemunhos h3 {
+    color: var(--azul);
+}
+
+.cargo {
+    color: var(--azul);
+    font-size: 0.9rem;
+}
+
+
+/* =====================================
+   RODAPÉ
+===================================== */
+
+footer {
+    background-color: var(--azul-claro);
+    border-top: 1px solid var(--borda);
+    color: var(--azul);
+    margin-top: 40px;
+}
+
+
+/* =====================================
+   RESPONSIVIDADE
+===================================== */
+
+/* TABLETS E TELEMÓVEIS */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        align-items: flex-start;
+        margin-top: 15px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+    .right-area {
+        margin-left: 0;
+        margin-top: 15px;
+        flex-wrap: wrap;
+    }
+
+    .search-box input {
+        width: 150px;
+    }
+}
+
+/* TELEMÓVEIS */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    header {
+        padding: 30px 20px;
+    }
+
+    .imagem-principal {
+        max-height: 250px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .testemunhos {
+        padding: 25px 15px !important;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+}
