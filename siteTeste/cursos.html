@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - CESAE Lisboa</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Próprio -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">CESAE Lisboa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cursos.html">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="parceiros.html">Parceiros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container my-5">
+        <h1 class="text-center mb-4 text-primary fw-bold">Nossos Cursos e Módulos</h1>
+        <p class="text-center text-muted mb-5">Conhece a oferta formativa do CESAE Digital em Lisboa.</p>
+
+        <!-- Acordeão de Módulos (Bootstrap) -->
+        <div class="accordion" id="accordionCursos">
+
+            <!-- Curso 1 -->
+            <div class="accordion-item mb-3 shadow-sm">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne">
+                        Técnico/a Especialista em Tecnologias e Programação de Sistemas
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionCursos">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><strong>Módulo 1:</strong> Introdução à Programação (HTML5 e CSS3)</li>
+                            <li><strong>Módulo 2:</strong> Programação Avançada com JavaScript</li>
+                            <li><strong>Módulo 3:</strong> Programação em Backend (Node.js / PHP)</li>
+                            <li><strong>Módulo 4:</strong> Bases de Dados e SQL</li>
+                            <li><strong>Módulo 5:</strong> Algoritmia aplicada e PCE</li>
+                            <li><strong>Módulo 6:</strong> Bootstrap 5 e CSS3</li>
+                            <li><strong>Módulo 7:</strong> Git e GitHub</li>
+                            <li><strong>Módulo 8:</strong> Laravel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curso 2 -->
+            <div class="accordion-item mb-3 shadow-sm">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo">
+                        Especialista em Marketing Digital e E-Commerce
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionCursos">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><strong>Módulo 1:</strong> Estratégias de Marketing Digital</li>
+                            <li><strong>Módulo 2:</strong> Gestão de Redes Sociais e Social Media</li>
+                            <li><strong>Módulo 3:</strong> SEO e SEM (Google Ads)</li>
+                            <li><strong>Módulo 4:</strong> Lojas Online e E-Commerce</li>
+                            <li><strong>Módulo 5:</strong> Análise de Dados e Indicadores (KPIs)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <p class="mb-0">&copy; 2026 CESAE Digital Lisboa - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (Necessário apenas para os componentes interativos do Bootstrap funcionarem, não é JS criado por ti) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

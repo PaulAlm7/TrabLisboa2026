@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos - CESAE Lisboa</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Próprio -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">CESAE Lisboa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="parceiros.html">Parceiros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contactos.html">Contactos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container my-5">
+        <h1 class="text-center mb-4 text-primary fw-bold">Entre em Contacto</h1>
+        <p class="text-center text-muted mb-5">Estamos ao seu dispor para esclarecer qualquer dúvida sobre os nossos
+            cursos e inscrições.</p>
+
+        <div class="row g-4">
+            <!-- Formulário de Contacto -->
+            <div class="col-lg-7">
+                <div class="card p-4 shadow-sm border-0">
+                    <h3 class="mb-3 text-primary h4">Envie uma Mensagem</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label fw-bold">Nome Completo</label>
+                            <input type="text" class="form-control" id="nome" placeholder="O seu nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="assunto" class="form-label fw-bold">Assunto</label>
+                            <input type="text" class="form-control" id="assunto" placeholder="Assunto da mensagem"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label fw-bold">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4"
+                                placeholder="Escreva a sua mensagem..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Informações de Contacto e Mapa -->
+            <div class="col-lg-5">
+                <div class="card p-4 shadow-sm border-0 mb-4 bg-light">
+                    <h3 class="mb-3 text-primary h4">Informações</h3>
+                    <p class="mb-2"><strong>📍 Morada:</strong> Lisboa, Portugal</p>
+                    <p class="mb-2"><strong>📞 Telefone:</strong> +351 211 234 567</p>
+                    <p class="mb-2"><strong>✉️ Email:</strong> lisboa@cesae.pt</p>
+                    <p class="mb-0"><strong>🕒 Horário:</strong> Segunda a Sexta, das 09h00 às 17h00</p>
+                </div>
+
+                <!-- Mapa Embutido (Google Maps) -->
+                <div class="card shadow-sm border-0 overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100000!2d-9.1393!3d38.7223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4f33b%3A0x400abb068f107a0!2sLisboa!5e0!3m2!1spt-PT!2spt!4v1600000000000!5m2!1spt-PT!2spt"
+                        width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <p class="mb-0">&copy; 2026 CESAE Digital Lisboa - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

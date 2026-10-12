@@ -1,0 +1,81 @@
+/* ==========================================
+   Estilos Globais - CESAE Digital Lisboa
+   ========================================== */
+
+:root {
+  --cesae-primary: #7426aa; /* Azul principal institucional */
+  --cesae-secondary: #7426aa; /* Azul secundário mais vivo */
+  --cesae-dark: #1a1a1a; /* Cor de texto escuro */
+  --cesae-light: #f4f7fa; /* Fundo suave / cinza claro tecnológico */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family:
+    "Segoe UI",
+    system-ui,
+    -apple-data,
+    sans-serif;
+  background-color: #7426aa;
+  color: var(--cesae-dark);
+}
+
+main {
+  flex: 1;
+}
+
+/* ==========================================
+   Navbar Personalizada
+   ========================================== */
+.navbar.bg-primary {
+  background-color: var(--cesae-primary) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ffcc00 !important; /* Toque de destaque institucional */
+  font-weight: 600;
+}
+
+/* ==========================================
+   Cartões e Componentes (Efeito Moderno)
+   ========================================== */
+.card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 77, 153, 0.1) !important;
+}
+
+/* ==========================================
+   Botões
+   ========================================== */
+.btn-primary {
+  background-color: var(--cesae-primary);
+  border-color: var(--cesae-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--cesae-secondary);
+  border-color: var(--cesae-secondary);
+}
+
+/* ==========================================
+   Rodapé
+   ========================================== */
+footer {
+  background-color: var(--cesae-dark) !important;
+  font-size: 0.9rem;
+}
