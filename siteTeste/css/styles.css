@@ -3,8 +3,8 @@
    ========================================== */
 
 :root {
-  --cesae-primary: #7426aa; /* Azul principal institucional */
-  --cesae-secondary: #7426aa; /* Azul secundário mais vivo */
+  --cesae-primary: #1535c4; /* Azul principal institucional */
+  --cesae-secondary: #1a86c9; /* Azul secundário mais vivo */
   --cesae-dark: #1a1a1a; /* Cor de texto escuro */
   --cesae-light: #f4f7fa; /* Fundo suave / cinza claro tecnológico */
 }
@@ -18,7 +18,7 @@ body {
     system-ui,
     -apple-data,
     sans-serif;
-  background-color: #7426aa;
+  background-color: #f0eef1;
   color: var(--cesae-dark);
 }
 
