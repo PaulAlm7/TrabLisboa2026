@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - CESAE Lisboa</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- CSS Próprio -->
+    <link rel="stylesheet" href="/Css/style.css">
+</head>
+
+<body>
+
+<!-- =====================================
+     NAVBAR 
+===================================== -->
+
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container">
+
+        <!-- LOGÓTIPO -->
+        <a href="/index.html" class="logo">
+            <img
+                src="../images/logo-escola-digital.png"
+                alt="Escola Digital Lisboa"
+            >
+        </a>
+
+        <!-- BOTÃO MOBILE -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- MENU -->
+        <div
+            class="collapse navbar-collapse justify-content-end"
+            id="menuPrincipal"
+        >
+
+            <!-- LINKS -->
+            <ul class="navbar-nav">
+
+                <!-- INÍCIO -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">
+                        Início
+                    </a>
+                </li>
+
+                <!-- CURSOS -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/Pages/cursos.html">
+                        Cursos
+                    </a>
+                </li>
+
+                <!-- CESAE LISBOA -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/Pages/CesaeLisboa.html">
+                        Cesae Lisboa
+                    </a>
+                </li>
+
+                <!-- EMPRESAS PARCEIRAS -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/Pages/EmpresasParceiras.html">
+                        Empresas Parceiras
+                    </a>
+                </li>
+
+                <!-- CONTACTOS -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/Pages/contactos.html">
+                        Contactos
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- PESQUISA + BOTÃO -->
+            <div class="right-area">
+
+                <!-- PESQUISA -->
+                <form
+                    class="search-box"
+                    action="#"
+                    method="get"
+                >
+                    <i class="bi bi-search"></i>
+
+                    <input
+                        type="search"
+                        name="pesquisa"
+                        placeholder="Pesquisar..."
+                        aria-label="Pesquisar"
+                    >
+                </form>
+
+                <!-- BOTÃO CURSOS -->
+                <a
+                    href="/Pages/cursos.html"
+                    class="btn-cursos"
+                >
+                    Cursos
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+    <!-- Conteúdo Principal -->
+    <main class="container ">
+        <header class="container text-center py-5">
+        <h1>Nossos Cursos e Módulos</h1>
+        <p class="text-center text-muted mb-5">Conhece a oferta formativa do CESAE Digital em Lisboa.</p>
+        </header>
+        <!-- Acordeão de Módulos (Bootstrap) -->
+        <div class="accordion" id="accordionCursos">
+
+            <!-- Curso 1 -->
+            <div class="accordion-item mb-3 shadow-sm">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne">
+                        Técnico/a Especialista em Tecnologias e Programação de Sistemas
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionCursos">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><strong>Módulo 1:</strong> Introdução à Programação (HTML5 e CSS3)</li>
+                            <li><strong>Módulo 2:</strong> Programação Avançada com JavaScript</li>
+                            <li><strong>Módulo 3:</strong> Programação em Backend (Node.js / PHP)</li>
+                            <li><strong>Módulo 4:</strong> Bases de Dados e SQL</li>
+                            <li><strong>Módulo 5:</strong> Algoritmia aplicada e PCE</li>
+                            <li><strong>Módulo 6:</strong> Bootstrap 5 e CSS3</li>
+                            <li><strong>Módulo 7:</strong> Git e GitHub</li>
+                            <li><strong>Módulo 8:</strong> Laravel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curso 2 -->
+            <div class="accordion-item mb-3 shadow-sm">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo">
+                        Especialista em Marketing Digital e E-Commerce
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionCursos">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><strong>Módulo 1:</strong> Estratégias de Marketing Digital</li>
+                            <li><strong>Módulo 2:</strong> Gestão de Redes Sociais e Social Media</li>
+                            <li><strong>Módulo 3:</strong> SEO e SEM (Google Ads)</li>
+                            <li><strong>Módulo 4:</strong> Lojas Online e E-Commerce</li>
+                            <li><strong>Módulo 5:</strong> Análise de Dados e Indicadores (KPIs)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">  
+   
+    
+   
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Cesae Digital Lisboa
+          </h6>
+          <p>
+            Somos, há 40 anos, o parceiro das empresas para a formação e qualificação.</p>
+<p>Telefone 226 195 200 </p>
+<p>Email geral@cesae.pt </p>
+<div class="redes-sociais">
+
+    <a href="https://www.instagram.com/cesae.digital/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://www.facebook.com/CesaeDigital" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.youtube.com/@cesaedigital" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+    </a>
+
+    <a href="https://pt.linkedin.com/school/cesae-digital/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+</div>
+          </p>
+          
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Cesae Digital
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Formação em Lisboa</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Tecnologia e Inovação</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Ligação ao Mercado de Trabalho</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">competências práticas</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Política de Cookies
+          </h6>
+          <p>
+            <a href="https://cesaedigital.pt/fldrSite/pages/privacyPolicy.aspx" class="text-reset">Política de Privacidade</a>
+          </p>
+          <p>
+            <a href="https://cesaedigital.pt/fldrSite/pages/personalDataPolicy.aspx" class="text-reset">Política de Dados Pessoais</a>
+          </p>
+          <p>
+            <a href="https://cesaedigital.pt/fldrSite/pages/termsAndConditions.aspx" class="text-reset">Termos & Condições</a>
+          </p>
+          <p>
+            <a href="https://www.livroreclamacoes.pt/Inicio/" class="text-reset">Livro de Reclamações</a>
+          </p>
+        </div>
+        <!-- Grid column -->    
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    Copyright©2026 CESAE. Todos os direitos reservados
+   
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <!-- Bootstrap 5 JS Bundle (Necessário apenas para os componentes interativos do Bootstrap funcionarem, não é JS criado por ti) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
