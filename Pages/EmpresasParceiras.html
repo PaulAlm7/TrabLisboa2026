@@ -1,484 +1,192 @@
-
 <!DOCTYPE html>
 <html lang="pt-PT">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>CESAE Digital Lisboa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas Parceiras - CESAE Digital Lisboa</title>
 
     <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-
-
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- CSS da página -->
     <link rel="stylesheet" href="../Css/style.css">
-
 </head>
 
 <body>
 
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../Images/logo-escola-digital.png" alt="Escola Digital Lisboa">
+            </a>
 
-<!-- =====================================
-     NAVBAR
-===================================== -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="CesaeLisboa.html">Cesae Lisboa</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="EmpresasParceiras.html">Empresas Parceiras</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+                </ul>
 
-    <div class="container">
-
-        <!-- LOGÓTIPO -->
-        <a href="../index.html" class="logo">
-            <img
-                src="../Images/logo-escola-digital.png"
-                alt="Escola Digital Lisboa"
-            >
-        </a>
-
-        <!-- BOTÃO MOBILE -->
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuPrincipal"
-            aria-controls="menuPrincipal"
-            aria-expanded="false"
-            aria-label="Abrir menu"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- MENU -->
-        <div
-            class="collapse navbar-collapse justify-content-end"
-            id="menuPrincipal"
-        >
-
-            <!-- LINKS -->
-            <ul class="navbar-nav">
-
-                <!-- INÍCIO -->
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">
-                        Início
-                    </a>
-                </li>
-
-                <!-- CURSOS -->
-                <li class="nav-item">
-                    <a class="nav-link" href="cursos.html">
-                        Cursos
-                    </a>
-                </li>
-
-                <!-- CESAE LISBOA -->
-                <li class="nav-item">
-                    <a class="nav-link" href="CesaeLisboa.html">
-                        Cesae Lisboa
-                    </a>
-                </li>
-
-                <!-- EMPRESAS PARCEIRAS -->
-                <li class="nav-item">
-                    <a class="nav-link" href="EmpresasParceiras.html">
-                        Empresas Parceiras
-                    </a>
-                </li>
-
-                <!-- CONTACTOS -->
-                <li class="nav-item">
-                    <a class="nav-link" href="contactos.html">
-                        Contactos
-                    </a>
-                </li>
-
-            </ul>
-
-            <!-- PESQUISA + BOTÃO -->
-            <div class="right-area">
-
-                <!-- PESQUISA -->
-                <form
-                    class="search-box"
-                    action="#"
-                    method="get"
-                >
-                    <i class="bi bi-search"></i>
-
-                    <input
-                        type="search"
-                        name="pesquisa"
-                        placeholder="Pesquisar..."
-                        aria-label="Pesquisar"
-                    >
-                </form>
-
-                <!-- BOTÃO CURSOS -->
-                <a
-                    href="cursos.html"
-                    class="btn-cursos"
-                >
-                    Cursos
-                </a>
-
+                <div class="right-area">
+                    <form class="search-box" action="#" method="get">
+                        <i class="bi bi-search"></i>
+                        <input type="search" name="pesquisa" placeholder="Pesquisar..." aria-label="Pesquisar">
+                    </form>
+                    <a href="cursos.html" class="btn-cursos">Cursos</a>
+                </div>
             </div>
-
         </div>
+    </nav>
 
-    </div>
-
-</nav>
-
-    <!-- =====================================
-         APRESENTAÇÃO
-    ===================================== -->
-
+    <!-- APRESENTAÇÃO -->
     <header class="container text-center py-5">
-
         <h1>Empresas Parceiras</h1>
+        <p class="lead mt-3">Juntos, criamos oportunidades para o futuro.</p>
+        <p>O CESAE Digital colabora com empresas de diferentes áreas, promovendo a formação profissional e a aproximação
+            dos formandos ao mercado de trabalho.</p>
 
-        <p class="lead mt-3">
-            Juntos, criamos oportunidades para o futuro.
-        </p>
-
-        <p>
-            O CESAE Digital colabora com empresas de
-            diferentes áreas, promovendo a formação
-            profissional e a aproximação dos formandos
-            ao mercado de trabalho.
-        </p>
-
-        <!-- IMAGEM PRINCIPAL -->
-        <img
-            src="../Images/parceria.jpg"
-            alt="Parceria e colaboração empresarial"
-            class="img-fluid imagem-principal mt-4"
-        >
-
+        <img src="../Images/parceria.jpg" alt="Parceria e colaboração empresarial"
+            class="img-fluid imagem-principal mt-4">
     </header>
 
-
-    <!-- =====================================
-         CONTEÚDO PRINCIPAL
-    ===================================== -->
-
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="container">
-
-        <!-- EMPRESAS -->
         <section class="empresas py-5">
-
-            <h2 class="text-center mb-3">
-                Conheça os nossos parceiros
-            </h2>
-
-            <p class="text-center mb-5">
-                Empresas ligadas à tecnologia,
-                inovação e desenvolvimento profissional.
-            </p>
+            <h2 class="text-center mb-3">Conheça os nossos parceiros</h2>
+            <p class="text-center mb-5">Empresas ligadas à tecnologia, inovação e desenvolvimento profissional.</p>
 
             <div class="row g-4">
-
-                <!-- SAP -->
                 <div class="col-12 col-md-6 col-lg-4">
-
                     <article class="card h-100">
-
                         <div class="card-body">
-
-                            <h3 class="card-title h5">
-                                SAP
-                            </h3>
-
-                            <p class="card-text">
-                                A SAP é uma empresa internacional
-                                especializada no desenvolvimento
-                                de software empresarial e soluções
-                                de gestão.
-
-                                As suas tecnologias ajudam as
-                                organizações a melhorar processos,
-                                gerir recursos e desenvolver
-                                a transformação digital.
-                            </p>
-
+                            <h3 class="card-title h5">SAP</h3>
+                            <p class="card-text">A SAP é uma empresa internacional especializada no desenvolvimento de
+                                software empresarial e soluções de gestão.</p>
                         </div>
-
                     </article>
-
                 </div>
 
-                <!-- SONAE -->
                 <div class="col-12 col-md-6 col-lg-4">
-
                     <article class="card h-100">
-
                         <div class="card-body">
-
-                            <h3 class="card-title h5">
-                                Sonae
-                            </h3>
-
-                            <p class="card-text">
-                                A Sonae é um grupo empresarial
-                                português com atividade em
-                                diferentes setores, incluindo
-                                retalho, tecnologia e serviços.
-
-                                Destaca-se pela aposta na
-                                inovação, no desenvolvimento
-                                de talento e na transformação
-                                digital.
-                            </p>
-
+                            <h3 class="card-title h5">Sonae</h3>
+                            <p class="card-text">A Sonae é um grupo empresarial português com atividade em diferentes
+                                setores, incluindo retalho, tecnologia e serviços.</p>
                         </div>
-
                     </article>
-
                 </div>
 
-                <!-- OUT.CLOUD -->
                 <div class="col-12 col-md-6 col-lg-4">
-
                     <article class="card h-100">
-
                         <div class="card-body">
-
-                            <h3 class="card-title h5">
-                                Out.Cloud
-                            </h3>
-
-                            <p class="card-text">
-                                A Out.Cloud é uma empresa
-                                especializada em soluções
-                                de Cloud e DevOps.
-
-                                Colabora com o CESAE Digital,
-                                contribuindo para a formação
-                                prática e para o desenvolvimento
-                                de competências na área
-                                tecnológica.
+                            <h3 class="card-title h5">Out.Cloud</h3>
+                            <p class="card-text">A Out.Cloud é uma empresa especializada em soluções de Cloud e DevOps.
                             </p>
-
                         </div>
-
                     </article>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- =====================================
-             TESTEMUNHOS
-        ===================================== -->
-
+        <!-- TESTEMUNHOS -->
         <section class="testemunhos py-5">
-
-            <h2 class="text-center mb-3">
-                O que dizem as empresas
-            </h2>
-
-            <p class="text-center mb-5">
-                Conheça as experiências de empresas
-                que colaboram com o CESAE Digital.
-            </p>
+            <h2 class="text-center mb-3">O que dizem as empresas</h2>
+            <p class="text-center mb-5">Conheça as experiências de empresas que colaboram com o CESAE Digital.</p>
 
             <div class="row g-4">
-
-                <!-- NELSON RATINHO -->
                 <div class="col-12 col-md-6">
-
                     <article class="card h-100">
-
                         <div class="card-body">
-
-                            <h3 class="h5">
-                                Nelson Ratinho
-                            </h3>
-
-                            <p class="cargo">
-                                Out.Cloud — CEO e Co-Founder
-                            </p>
-
-                            <p>
-                                A Out.Cloud destaca a sua
-                                experiência de colaboração
-                                com o CESAE Digital na
-                                área tecnológica.
-                            </p>
-
+                            <h3 class="h5">Nelson Ratinho</h3>
+                            <p class="cargo">Out.Cloud — CEO e Co-Founder</p>
+                            <p>A Out.Cloud destaca a sua experiência de colaboração com o CESAE Digital na área
+                                tecnológica.</p>
                         </div>
-
                     </article>
-
                 </div>
 
-                <!-- JOÃO AZEVEDO -->
                 <div class="col-12 col-md-6">
-
                     <article class="card h-100">
-
                         <div class="card-body">
-
-                            <h3 class="h5">
-                                João Azevedo
-                            </h3>
-
-                            <p class="cargo">
-                                180 Consulting — CFO
-                            </p>
-
-                            <p>
-                                A 180 Consulting valoriza
-                                a parceria com o CESAE Digital
-                                e a formação prática em
-                                contexto de trabalho.
-                            </p>
-
+                            <h3 class="h5">João Azevedo</h3>
+                            <p class="cargo">180 Consulting — CFO</p>
+                            <p>A 180 Consulting valoriza a parceria com o CESAE Digital e a formação prática em contexto
+                                de trabalho.</p>
                         </div>
-
                     </article>
-
                 </div>
-
             </div>
 
-            <!-- SITE OFICIAL -->
             <p class="text-center mt-4 mb-0">
-
-                <a
-                    href="https://www.cesaedigital.pt/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Conheça mais sobre o CESAE Digital
-                </a>
-
+                <a href="https://www.cesaedigital.pt/" target="_blank" rel="noopener noreferrer">Conheça mais sobre o
+                    CESAE Digital</a>
             </p>
-
         </section>
-
     </main>
 
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <section class="py-4">
+            <div class="container text-center text-md-start mt-3">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4"><i class="fas fa-gem me-3"></i>Cesae Digital Lisboa</h6>
+                        <p>Somos, há 40 anos, o parceiro das empresas para a formação e qualificação.</p>
+                        <p>Telefone 226 195 200</p>
+                        <p>Email geral@cesae.pt</p>
+                        <div class="redes-sociais">
+                            <a href="https://www.instagram.com/cesae.digital/" target="_blank" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/CesaeDigital" target="_blank" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.youtube.com/@cesaedigital" target="_blank" aria-label="YouTube"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a href="https://pt.linkedin.com/school/cesae-digital/" target="_blank"
+                                aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
 
-<!-- Footer -->
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Cesae Digital</h6>
+                        <p><a href="CesaeLisboa.html#formacao" class="text-reset">Formação em Lisboa</a></p>
+                        <p><a href="CesaeLisboa.html#tecnologia" class="text-reset">Tecnologia e Inovação</a></p>
+                        <p><a href="CesaeLisboa.html#mercado" class="text-reset">Ligação ao Mercado de Trabalho</a></p>
+                        <p><a href="CesaeLisboa.html#formacao" class="text-reset">Competências práticas</a></p>
+                    </div>
 
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Política de Cookies</h6>
+                        <p><a href="https://cesaedigital.pt/fldrSite/pages/privacyPolicy.aspx"
+                                class="text-reset">Política de Privacidade</a></p>
+                        <p><a href="https://cesaedigital.pt/fldrSite/pages/personalDataPolicy.aspx"
+                                class="text-reset">Política de Dados Pessoais</a></p>
+                        <p><a href="https://cesaedigital.pt/fldrSite/pages/termsAndConditions.aspx"
+                                class="text-reset">Termos & Condições</a></p>
+                        <p><a href="https://www.livroreclamacoes.pt/Inicio/" class="text-reset">Livro de Reclamações</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-  </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Cesae Digital Lisboa
-          </h6>
-          <p>
-            Somos, há 40 anos, o parceiro das empresas para a formação e qualificação.</p>
-<p>Telefone 226 195 200 </p>
-<p>Email geral@cesae.pt </p>
-<div class="redes-sociais">
-
-    <a href="https://www.instagram.com/cesae.digital/" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-    </a>
-
-    <a href="https://www.facebook.com/CesaeDigital" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-    </a>
-
-    <a href="https://www.youtube.com/@cesaedigital" target="_blank" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-    </a>
-
-    <a href="https://pt.linkedin.com/school/cesae-digital/" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin-in"></i>
-    </a>
-
-</div>
-          </p>
-
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            Copyright©2026 CESAE. Todos os direitos reservados
         </div>
-        <!-- Grid column -->
+    </footer>
 
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Cesae Digital
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Formação em Lisboa</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Tecnologia e Inovação</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Ligação ao Mercado de Trabalho</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">competências práticas</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Política de Cookies
-          </h6>
-          <p>
-            <a href="https://cesaedigital.pt/fldrSite/pages/privacyPolicy.aspx" class="text-reset">Política de Privacidade</a>
-          </p>
-          <p>
-            <a href="https://cesaedigital.pt/fldrSite/pages/personalDataPolicy.aspx" class="text-reset">Política de Dados Pessoais</a>
-          </p>
-          <p>
-            <a href="https://cesaedigital.pt/fldrSite/pages/termsAndConditions.aspx" class="text-reset">Termos & Condições</a>
-          </p>
-          <p>
-            <a href="https://www.livroreclamacoes.pt/Inicio/" class="text-reset">Livro de Reclamações</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-      </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
-
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    Copyright©2026 CESAE. Todos os direitos reservados
-
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
-
-
-
-    <!-- JAVASCRIPT DO BOOTSTRAP -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
