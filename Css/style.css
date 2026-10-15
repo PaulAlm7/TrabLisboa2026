@@ -1,10 +1,20 @@
-/* =====================================
-   ESTILOS GERAIS
-===================================== */
+/* =========================================================
+   STYLE.CSS — ESCOLA DIGITAL LISBOA
+   Folha de estilos partilhada pelas páginas HTML do projeto.
+   As classes de Bootstrap continuam a ser fornecidas pelo Bootstrap.
+   ========================================================= */
+
+
+/* =========================================================
+   1. CONFIGURAÇÕES GERAIS E CORES
+   ========================================================= */
+
+/* Inclui o padding e a borda no cálculo da largura/altura dos elementos. */
 * {
   box-sizing: border-box;
 }
 
+/* Variáveis de cores reutilizadas em várias secções do site. */
 :root {
   --azul: #365b91;
   --azul-claro: #eef3fa;
@@ -15,6 +25,7 @@
   --borda: #dce4f0;
 }
 
+/* Estilo base de todas as páginas: margem, fundo, cor e tipografia. */
 body {
   margin: 0;
   background-color: var(--branco);
@@ -23,39 +34,49 @@ body {
   line-height: 1.7;
 }
 
+/* Cor comum dos títulos principais. */
 h1,
 h2,
 h3 {
   color: var(--azul);
 }
 
+/* Tamanho e peso dos títulos de primeiro nível. */
 h1 {
   font-size: 2.5rem;
   font-weight: 600;
 }
 
+/* Tamanho e peso dos títulos de segundo nível. */
 h2 {
   font-size: 1.9rem;
   font-weight: 600;
 }
 
+/* Peso dos títulos de terceiro nível. */
 h3 {
   font-weight: 600;
 }
 
+/* Aparência normal das ligações. */
 a {
   color: var(--azul);
   text-decoration: none;
 }
 
+/* Aparência das ligações quando o rato passa por cima. */
 a:hover {
   color: #28466f;
   text-decoration: underline;
 }
 
-/* =====================================
-   NAVBAR
-===================================== */
+
+/* =========================================================
+   2. BARRA DE NAVEGAÇÃO (NAVBAR)
+   Utilizada no topo das páginas do projeto.
+   ========================================================= */
+
+/* Altura, fundo, linha inferior e espaçamento da navbar. */
 .navbar {
   height: 90px;
   background-color: var(--branco);
@@ -63,11 +84,13 @@ a:hover {
   padding: 0;
 }
 
+/* Ocupa a altura da navbar e limita a largura do conteúdo. */
 .navbar .container {
   height: 100%;
   max-width: 1200px;
 }
 
+/* Alinha verticalmente o logótipo. */
 .logo {
   display: flex;
   align-items: center;
@@ -75,6 +98,7 @@ a:hover {
   text-decoration: none;
 }
 
+/* Define a dimensão do logótipo sem distorcer a imagem. */
 .logo img {
   display: block;
   width: 165px;
@@ -82,12 +106,14 @@ a:hover {
   height: auto;
 }
 
+/* Alinha os itens do menu e define o espaço entre eles. */
 .navbar-nav {
   display: flex;
   align-items: center;
   gap: 3px;
 }
 
+/* Formatação dos links do menu. */
 .navbar-nav .nav-link {
   color: var(--texto);
   font-size: 15.5px;
@@ -98,11 +124,13 @@ a:hover {
   transition: color 0.2s;
 }
 
+/* Destaca o link ativo e o link sob o rato. */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
   color: var(--azul) !important;
 }
 
+/* Agrupa a pesquisa e o botão adicional à direita do menu. */
 .right-area {
   display: flex;
   align-items: center;
@@ -110,6 +138,7 @@ a:hover {
   margin-left: 20px;
 }
 
+/* Caixa visual do campo de pesquisa. */
 .search-box {
   display: flex;
   align-items: center;
@@ -122,12 +151,14 @@ a:hover {
   background-color: var(--branco);
 }
 
+/* Ícone da lupa dentro da caixa de pesquisa. */
 .search-box i {
   color: var(--azul);
   font-size: 16px;
   flex-shrink: 0;
 }
 
+/* Campo de texto da pesquisa. */
 .search-box input {
   width: 105px;
   min-width: 0;
@@ -138,14 +169,17 @@ a:hover {
   font-size: 0.85rem;
 }
 
+/* Alarga ligeiramente o campo quando recebe foco. */
 .search-box input:focus {
   width: 125px;
 }
 
+/* Cor do texto de exemplo dentro da pesquisa. */
 .search-box input::placeholder {
   color: #999;
 }
 
+/* Estilo do botão "Cursos" e de outros links que usam esta classe. */
 .btn-cursos {
   display: inline-flex;
   align-items: center;
@@ -162,53 +196,65 @@ a:hover {
   transition: background-color 0.3s;
 }
 
+/* Cor do botão quando o rato passa por cima. */
 .btn-cursos:hover {
   background-color: #1f4f86;
   color: var(--branco);
   text-decoration: none;
 }
 
+/* Ajusta a moldura do botão do menu em dispositivos móveis. */
 .navbar-toggler {
   border: none;
   padding: 5px;
 }
 
+/* Remove a sombra de foco predefinida do botão do menu. */
 .navbar-toggler:focus {
   box-shadow: none;
 }
 
-/* =====================================
-   CARROSSEL / CONTEÚDO
-===================================== */
+
+/* =========================================================
+   3. PÁGINA INICIAL — CARROSSEL
+   ========================================================= */
+
+/* Remove espaçamentos adicionais em redor da área do carrossel. */
 .conteudo {
   margin-top: 0;
   padding: 0;
 }
 
+/* Estilo específico do título dentro da área do carrossel. */
 .conteudo h1 {
   color: #071b3a;
   font-size: 42px;
   font-weight: 700;
 }
 
+/* Estilo dos parágrafos dentro da área do carrossel. */
 .conteudo p {
   color: #666;
   font-size: 18px;
 }
 
+/* Mantém os textos do carrossel brancos e legíveis sobre as imagens. */
 .carousel-caption h1,
 .carousel-caption h2,
 .carousel-caption p {
-  color: #fff; /* branco para sobressair em relação ás fotos */
+  color: #fff;
   text-shadow:
     2px 2px 6px rgba(7, 27, 58, 0.9),
     -2px -2px 6px rgba(7, 27, 58, 0.9),
-    0px 0px 10px rgba(54, 91, 145, 0.8); /*para destacar o texto */
+    0 0 10px rgba(54, 91, 145, 0.8);
 }
 
-/* =====================================
-   SEPARADOR DE FORMAÇÃO
-===================================== */
+
+/* =========================================================
+   4. PÁGINA INICIAL — FAIXA DE AJUDA À FORMAÇÃO
+   ========================================================= */
+
+/* Faixa azul que convida o visitante a pedir ajuda para escolher um curso. */
 .ajuda-formacao {
   width: 100%;
   padding: 120px 0;
@@ -216,6 +262,7 @@ a:hover {
   color: var(--branco);
 }
 
+/* Título dentro da faixa de ajuda. */
 .ajuda-formacao h2 {
   margin-bottom: 10px;
   font-size: 36px;
@@ -223,6 +270,7 @@ a:hover {
   line-height: 1.2;
 }
 
+/* Texto explicativo dentro da faixa de ajuda. */
 .ajuda-formacao p {
   max-width: 750px;
   margin-bottom: 0;
@@ -230,39 +278,19 @@ a:hover {
   line-height: 1.5;
 }
 
-/* .btn-ajuda {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 10px 20px;
-  border: 1px solid var(--branco);
-  border-radius: 50px;
-  color: var(--branco);
-  font-size: 14px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-} */
 
-.btn-ajuda .seta {
-  font-size: 25px;
-  line-height: 15px;
-}
+/* =========================================================
+   5. PÁGINA INICIAL — CURSOS EM DESTAQUE
+   ========================================================= */
 
-.btn-ajuda:hover {
-  background-color: var(--branco);
-  color: #7626a8;
-}
-
-/* =====================================
-   CURSOS EM DESTAQUE
-===================================== */
+/* Fundo e espaçamento da secção de cursos em destaque. */
 .cursos-destaque {
   padding: 45px 0 25px;
   background-color: #f7f7f7;
   font-family: Arial, sans-serif;
 }
 
+/* Título da secção de cursos em destaque. */
 .titulo-cursos {
   margin-bottom: 8px;
   color: #333;
@@ -270,30 +298,14 @@ a:hover {
   font-weight: 500;
 }
 
+/* Texto secundário por baixo do título dos cursos. */
 .subtitulo-cursos {
   margin-bottom: 0;
   color: #333;
   font-size: 16px;
 }
 
-/* .btn-todos-cursos {
-  display: inline-block;
-  padding: 10px 20px;
-  border: 1px solid #333;
-  border-radius: 30px;
-  color: #333;
-  font-size: 14px;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: 0.3s;
-} */
-
-/* .btn-todos-cursos:hover {
-  border-color: #7626a8;
-  background-color: #7626a8;
-  color: var(--branco);
-} */
-
+/* Cartão individual de cada curso. */
 .curso-card {
   height: 100%;
   overflow: hidden;
@@ -301,10 +313,12 @@ a:hover {
   transition: transform 0.3s ease;
 }
 
+/* Eleva ligeiramente o cartão quando o rato passa por cima. */
 .curso-card:hover {
   transform: translateY(-5px);
 }
 
+/* Imagem do curso: ocupa toda a largura e mantém o recorte preenchido. */
 .img-curso {
   display: block;
   width: 100%;
@@ -312,6 +326,7 @@ a:hover {
   object-fit: cover;
 }
 
+/* Organiza verticalmente o título, a data e o preço do curso. */
 .curso-info {
   display: flex;
   min-height: 210px;
@@ -319,12 +334,7 @@ a:hover {
   flex-direction: column;
 }
 
-/* .curso-local {
-  margin-bottom: 8px;
-  color: #666;
-  font-size: 14px;
-} */
-
+/* Título de cada curso no cartão. */
 .curso-info h3 {
   margin-bottom: 8px;
   color: #222;
@@ -333,12 +343,14 @@ a:hover {
   line-height: 1.45;
 }
 
+/* Data apresentada no cartão do curso. */
 .curso-data {
   margin-bottom: 25px;
   color: #333;
   font-size: 14px;
 }
 
+/* Preço do curso; margin-top:auto mantém-no junto à parte inferior do cartão. */
 .curso-preco {
   margin-top: auto;
   margin-bottom: 10px;
@@ -346,10 +358,12 @@ a:hover {
   font-size: 16px;
 }
 
+/* Cor alternativa para cursos pagos. */
 .curso-preco.pago {
   color: #222;
 }
 
+/* Fundo da barra decorativa de progresso abaixo dos cartões. */
 .barra-cursos {
   position: relative;
   width: 100%;
@@ -359,6 +373,7 @@ a:hover {
   background-color: #dedede;
 }
 
+/* Segmento azul que representa o progresso na barra decorativa. */
 .barra-progresso {
   width: 60%;
   height: 4px;
@@ -367,9 +382,14 @@ a:hover {
   background-color: #2b6ab1;
 }
 
-/* =====================================
-   APRESENTAÇÃO
-===================================== */
+
+/* =========================================================
+   6. PÁGINAS INTERIORES — CABEÇALHO E IMAGENS
+   Nota: a regra "header" é global e também afeta cabeçalhos
+   usados noutras páginas. Mantém-se para preservar o aspeto atual.
+   ========================================================= */
+
+/* Fundo e espaçamento dos elementos HTML <header>. */
 header {
   margin-top: 30px;
   padding: 50px 30px;
@@ -377,17 +397,20 @@ header {
   background-color: var(--azul-claro);
 }
 
+/* Destaca o texto com a classe Bootstrap "lead" dentro de um header. */
 header .lead {
   color: var(--azul);
   font-weight: 400;
 }
 
+/* Limita a largura dos parágrafos de cabeçalho e centra-os. */
 header p {
   max-width: 750px;
   margin-right: auto;
   margin-left: auto;
 }
 
+/* Imagem principal das páginas interiores. */
 .imagem-principal {
   width: 100%;
   max-width: 900px;
@@ -397,17 +420,22 @@ header p {
   object-fit: cover;
 }
 
-/* =====================================
-   SECÇÕES E CARTÕES
-===================================== */
+
+/* =========================================================
+   7. SECÇÕES E CARTÕES
+   ========================================================= */
+
+/* Espaço inferior entre secções. */
 section {
   margin-bottom: 30px;
 }
 
+/* Espaçamento abaixo dos títulos de secção. */
 section h2 {
   margin-bottom: 15px;
 }
 
+/* Aparência comum dos cartões Bootstrap usados nas páginas. */
 .card {
   border: 1px solid var(--borda);
   border-radius: 12px;
@@ -418,28 +446,35 @@ section h2 {
     box-shadow 0.3s ease;
 }
 
+/* Realça o cartão quando o rato passa por cima. */
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 18px rgba(54, 91, 145, 0.1);
 }
 
+/* Espaçamento interno do conteúdo do cartão. */
 .card-body {
   padding: 28px;
 }
 
+/* Cor e margem do título de um cartão. */
 .card-title {
   margin-bottom: 15px;
   color: var(--azul);
 }
 
+/* Cor e tamanho do texto dentro de um cartão. */
 .card-text {
   color: var(--texto);
   font-size: 0.95rem;
 }
 
-/* =====================================
-   TESTEMUNHOS
-===================================== */
+
+/* =========================================================
+   8. PÁGINA DE EMPRESAS PARCEIRAS — TESTEMUNHOS
+   ========================================================= */
+
+/* Fundo lilás, borda e espaçamento da secção de testemunhos. */
 .testemunhos {
   padding: 40px 30px !important;
   border: 1px solid #ebe5f4;
@@ -447,23 +482,29 @@ section h2 {
   background-color: var(--lilas-claro);
 }
 
+/* Aparência dos cartões dentro da secção de testemunhos. */
 .testemunhos .card {
   border-color: #e5ddf1;
   background-color: var(--branco);
 }
 
+/* Cor dos títulos dos testemunhos e dos cargos. */
 .testemunhos h3,
 .cargo {
   color: var(--azul);
 }
 
+/* Tamanho do texto que identifica o cargo da pessoa. */
 .cargo {
   font-size: 0.9rem;
 }
 
-/* =====================================
-   RODAPÉ
-===================================== */
+
+/* =========================================================
+   9. RODAPÉ
+   ========================================================= */
+
+/* Linha superior, fundo e cor de texto do rodapé. */
 footer {
   margin-top: 40px;
   border-top: 1px solid var(--borda);
@@ -471,158 +512,204 @@ footer {
   color: var(--azul);
 }
 
-/* =====================================
-   RESPONSIVIDADE
-===================================== */
+
+/* =========================================================
+   10. RESPONSIVIDADE — ECRÃS ATÉ 1199px
+   Ajusta a largura do menu e da pesquisa em ecrãs mais pequenos.
+   ========================================================= */
 @media (max-width: 1199px) {
+  /* Reduz a largura do contentor da navbar. */
   .navbar .container {
     max-width: 95%;
   }
 
+  /* Reduz o espaço e o tamanho do texto dos links do menu. */
   .navbar-nav .nav-link {
     padding: 10px 8px !important;
     font-size: 14px;
   }
 
+  /* Reduz a largura da caixa de pesquisa. */
   .search-box {
     width: 150px;
   }
 
+  /* Reduz os espaços entre os elementos à direita do menu. */
   .right-area {
     gap: 8px;
     margin-left: 10px;
   }
 }
 
+
+/* =========================================================
+   11. RESPONSIVIDADE — TABLETS E ECRÃS ATÉ 991px
+   O menu passa para o formato recolhível do Bootstrap.
+   ========================================================= */
 @media (max-width: 991px) {
+  /* Permite que a navbar cresça quando o menu é aberto. */
   .navbar {
     height: auto;
     min-height: 80px;
     padding: 12px 0;
   }
 
+  /* A altura do contentor deixa de acompanhar uma navbar fixa. */
   .navbar .container {
     height: auto;
   }
 
+  /* Reduz o tamanho do logótipo. */
   .logo img {
     width: 150px;
   }
 
+  /* Cria espaço entre a linha do logótipo e o menu aberto. */
   .navbar-collapse {
     padding-top: 20px;
   }
 
+  /* Apresenta os links do menu em coluna. */
   .navbar-nav {
     display: block;
     align-items: flex-start;
     margin-top: 15px;
   }
 
+  /* Alinha os links do menu à esquerda. */
   .navbar-nav .nav-link {
     padding: 10px 0 !important;
+    margin-left: 0;
   }
 
+  /* Coloca a pesquisa e o botão em coluna no menu móvel. */
   .right-area {
     display: block;
     margin: 15px 0 0;
   }
 
+  /* A pesquisa ocupa a largura disponível no menu móvel. */
   .search-box {
     width: 100%;
     margin-bottom: 12px;
   }
 
+  /* Dá espaço suficiente ao texto da pesquisa em ecrãs pequenos. */
   .search-box input {
     width: 150px;
   }
 
+  /* Faz o botão ocupar a largura do menu móvel. */
   .btn-cursos {
     width: 100%;
   }
 
+  /* Reduz o espaçamento vertical da faixa de ajuda. */
   .ajuda-formacao {
     padding: 60px 0;
   }
 
+  /* Reduz o título da faixa de ajuda. */
   .ajuda-formacao h2 {
     font-size: 28px;
   }
 
+  /* Reduz o texto da faixa de ajuda. */
   .ajuda-formacao p {
     font-size: 15px;
   }
 
-  .navbar-nav .nav-link {
-    margin-left: 0;
-  }
-
+  /* Remove a margem à esquerda herdada da versão de desktop. */
   .right-area {
     margin-left: 0;
   }
 }
 
+
+/* =========================================================
+   12. RESPONSIVIDADE — TELEMÓVEIS ATÉ 767px
+   ========================================================= */
 @media (max-width: 767px) {
+  /* Reduz o espaço acima da secção de cursos. */
   .cursos-destaque {
     padding-top: 30px;
   }
 
+  /* Reduz o título dos cursos para caber no ecrã. */
   .titulo-cursos {
     font-size: 28px;
   }
 
+  /* Reduz o texto secundário dos cursos. */
   .subtitulo-cursos {
     font-size: 14px;
   }
 
+  /* Empilha o título e o botão de ver cursos. */
   .cursos-destaque .d-flex {
     align-items: flex-start !important;
     flex-direction: column;
     gap: 20px;
   }
 
+  /* Ajusta a altura das imagens dos cartões em telemóveis. */
   .img-curso {
     height: 230px;
   }
 
+  /* Reduz a altura mínima e o espaçamento dos cartões. */
   .curso-info {
     min-height: 190px;
   }
 
+  /* Reduz a distância entre os cartões e a barra decorativa. */
   .barra-cursos {
     margin-top: 25px;
   }
 
+  /* Alinha à esquerda o botão da faixa de ajuda em ecrãs pequenos. */
   .ajuda-formacao .text-md-end {
     text-align: left !important;
   }
 }
 
+
+/* =========================================================
+   13. RESPONSIVIDADE — ECRÃS ATÉ 768px
+   Ajustes gerais de títulos, cabeçalhos, cartões e logótipo.
+   ========================================================= */
 @media (max-width: 768px) {
+  /* Reduz o tamanho dos títulos principais. */
   h1 {
     font-size: 2rem;
   }
 
+  /* Reduz o tamanho dos títulos secundários. */
   h2 {
     font-size: 1.6rem;
   }
 
+  /* Reduz o espaçamento interno dos cabeçalhos. */
   header {
     padding: 30px 20px;
   }
 
+  /* Limita a altura da imagem principal em dispositivos pequenos. */
   .imagem-principal {
     max-height: 250px;
   }
 
+  /* Reduz o espaço interno dos cartões. */
   .card-body {
     padding: 20px;
   }
 
+  /* Reduz o espaço interno da secção de testemunhos. */
   .testemunhos {
     padding: 25px 15px !important;
   }
 
+  /* Limita a largura do logótipo em ecrãs pequenos. */
   .logo img {
     max-width: 120px;
   }
