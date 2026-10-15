@@ -1,0 +1,615 @@
+/* =====================================
+   ESTILOS GERAIS
+===================================== */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --azul: #365B91;
+    --azul-claro: #EEF3FA;
+    --lilas: #B8A9DD;
+    --lilas-claro: #F7F4FC;
+    --branco: #FFFFFF;
+    --texto: #465266;
+    --borda: #DCE4F0;
+}
+
+body {
+    margin: 0;
+    background-color: var(--branco);
+    color: var(--texto);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    color: var(--azul);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+a {
+    color: var(--azul);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #28466F;
+    text-decoration: underline;
+}
+
+/* =====================================
+   NAVBAR
+===================================== */
+.navbar {
+    height: 90px;
+    background-color: var(--branco);
+    border-bottom: 1px solid var(--borda);
+    padding: 0;
+}
+
+.navbar .container {
+    height: 100%;
+    max-width: 1200px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+.logo img {
+    display: block;
+    width: 165px;
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--texto);
+    font-size: 15.5px;
+    font-weight: 400;
+    padding: 10px 13px !important;
+    margin-left: 0;
+    white-space: nowrap;
+    transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--azul) !important;
+}
+
+.right-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 190px;
+    height: 42px;
+    padding: 0 14px;
+    border: 1px solid var(--borda);
+    border-radius: 25px;
+    background-color: var(--branco);
+}
+
+.search-box i {
+    color: var(--azul);
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.search-box input {
+    width: 105px;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--texto);
+    font-size: 0.85rem;
+}
+
+.search-box input:focus {
+    width: 125px;
+}
+
+.search-box input::placeholder {
+    color: #999;
+}
+
+.btn-cursos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 115px;
+    padding: 9px 18px;
+    border-radius: 25px;
+    background-color: #2B6AB1;
+    color: var(--branco);
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-cursos:hover {
+    background-color: #1F4F86;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 5px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* =====================================
+   CARROSSEL / CONTEÚDO
+===================================== */
+.conteudo {
+    margin-top: 0;
+    padding: 0;
+}
+
+.conteudo h1 {
+    color: #071B3A;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.conteudo p {
+    color: #666;
+    font-size: 18px;
+}
+
+/* =====================================
+   SEPARADOR DE FORMAÇÃO
+===================================== */
+.ajuda-formacao {
+    width: 100%;
+    padding: 120px 0;
+    background-color: #365B91;
+    color: var(--branco);
+}
+
+.ajuda-formacao h2 {
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.ajuda-formacao p {
+    max-width: 750px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.btn-ajuda {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 1px solid var(--branco);
+    border-radius: 50px;
+    color: var(--branco);
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-ajuda .seta {
+    font-size: 25px;
+    line-height: 15px;
+}
+
+.btn-ajuda:hover {
+    background-color: var(--branco);
+    color: #7626A8;
+}
+
+/* =====================================
+   CURSOS EM DESTAQUE
+===================================== */
+.cursos-destaque {
+    padding: 45px 0 25px;
+    background-color: #F7F7F7;
+    font-family: Arial, sans-serif;
+}
+
+.titulo-cursos {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.subtitulo-cursos {
+    margin-bottom: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.btn-todos-cursos {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 30px;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.btn-todos-cursos:hover {
+    border-color: #7626A8;
+    background-color: #7626A8;
+    color: var(--branco);
+}
+
+.curso-card {
+    height: 100%;
+    overflow: hidden;
+    background-color: #EAEAEA;
+    transition: transform 0.3s ease;
+}
+
+.curso-card:hover {
+    transform: translateY(-5px);
+}
+
+.img-curso {
+    display: block;
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+}
+
+.curso-info {
+    display: flex;
+    min-height: 210px;
+    padding: 28px 20px 20px;
+    flex-direction: column;
+}
+
+.curso-local {
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+.curso-info h3 {
+    margin-bottom: 8px;
+    color: #222;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+.curso-data {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 14px;
+}
+
+.curso-preco {
+    margin-top: auto;
+    margin-bottom: 10px;
+    color: #2B6AB1;
+    font-size: 16px;
+}
+
+.curso-preco.pago {
+    color: #222;
+}
+
+.barra-cursos {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    margin-top: 32px;
+    border-radius: 5px;
+    background-color: #DEDEDE;
+}
+
+.barra-progresso {
+    width: 60%;
+    height: 4px;
+    margin-left: 17%;
+    border-radius: 5px;
+    background-color: #2B6AB1;
+}
+
+/* =====================================
+   APRESENTAÇÃO
+===================================== */
+header {
+    margin-top: 30px;
+    padding: 50px 30px;
+    border-radius: 15px;
+    background-color: var(--azul-claro);
+}
+
+header .lead {
+    color: var(--azul);
+    font-weight: 400;
+}
+
+header p {
+    max-width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.imagem-principal {
+    width: 100%;
+    max-width: 900px;
+    max-height: 380px;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* =====================================
+   SECÇÕES E CARTÕES
+===================================== */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+}
+
+.card {
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    background-color: var(--branco);
+    box-shadow: 0 3px 12px rgba(54, 91, 145, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(54, 91, 145, 0.10);
+}
+
+.card-body {
+    padding: 28px;
+}
+
+.card-title {
+    margin-bottom: 15px;
+    color: var(--azul);
+}
+
+.card-text {
+    color: var(--texto);
+    font-size: 0.95rem;
+}
+
+/* =====================================
+   TESTEMUNHOS
+===================================== */
+.testemunhos {
+    padding: 40px 30px !important;
+    border: 1px solid #EBE5F4;
+    border-radius: 15px;
+    background-color: var(--lilas-claro);
+}
+
+.testemunhos .card {
+    border-color: #E5DDF1;
+    background-color: var(--branco);
+}
+
+.testemunhos h3,
+.cargo {
+    color: var(--azul);
+}
+
+.cargo {
+    font-size: 0.9rem;
+}
+
+/* =====================================
+   RODAPÉ
+===================================== */
+footer {
+    margin-top: 40px;
+    border-top: 1px solid var(--borda);
+    background-color: var(--azul-claro);
+    color: var(--azul);
+}
+
+/* =====================================
+   RESPONSIVIDADE
+===================================== */
+@media (max-width: 1199px) {
+    .navbar .container {
+        max-width: 95%;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 8px !important;
+        font-size: 14px;
+    }
+
+    .search-box {
+        width: 150px;
+    }
+
+    .right-area {
+        gap: 8px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        height: auto;
+        min-height: 80px;
+        padding: 12px 0;
+    }
+
+    .navbar .container {
+        height: auto;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .navbar-collapse {
+        padding-top: 20px;
+    }
+
+    .navbar-nav {
+        display: block;
+        align-items: flex-start;
+        margin-top: 15px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0 !important;
+    }
+
+    .right-area {
+        display: block;
+        margin: 15px 0 0;
+    }
+
+    .search-box {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .search-box input {
+        width: 150px;
+    }
+
+    .btn-cursos {
+        width: 100%;
+    }
+
+    .ajuda-formacao {
+        padding: 60px 0;
+    }
+
+    .ajuda-formacao h2 {
+        font-size: 28px;
+    }
+
+    .ajuda-formacao p {
+        font-size: 15px;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+    }
+
+    .right-area {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .cursos-destaque {
+        padding-top: 30px;
+    }
+
+    .titulo-cursos {
+        font-size: 28px;
+    }
+
+    .subtitulo-cursos {
+        font-size: 14px;
+    }
+
+    .cursos-destaque .d-flex {
+        align-items: flex-start !important;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .img-curso {
+        height: 230px;
+    }
+
+    .curso-info {
+        min-height: 190px;
+    }
+
+    .barra-cursos {
+        margin-top: 25px;
+    }
+
+    .ajuda-formacao .text-md-end {
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    header {
+        padding: 30px 20px;
+    }
+
+    .imagem-principal {
+        max-height: 250px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .testemunhos {
+        padding: 25px 15px !important;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+}
